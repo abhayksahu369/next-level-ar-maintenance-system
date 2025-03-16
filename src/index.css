@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-valorant-black text-valorant-light font-['Inter'] overflow-x-hidden;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(17,17,17,0) 0%, rgba(17,17,17,1) 100%);
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
